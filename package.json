@@ -1,12 +1,18 @@
 {
   "name": "samplerack",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "description": "Sample intake and plate tracking for the wet lab",
-  "main": "src/app.js",
+  "main": "bin/serve.js",
   "engines": {
     "node": ">=20"
+  },
+  "scripts": {
+    "start": "node bin/serve.js",
+    "seed": "node src/seed.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "better-sqlite3": "^11.3.0",
